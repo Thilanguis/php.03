@@ -2,27 +2,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Escola Santa Paciência</title>
-    
-    <?php include_once 'head.php'; ?>
-    
 </head>
 <body>
-   <div class="container" style="width: 500px;">
-   <form action="gravar.php" method="post">
-      
-      <h3>Cadastro de Alunos</h3>
-       <label >Nome</label>
-       <input class="form-control" type="text" name="nome">
-       <label >E-Mail</label>
-       <input class="form-control" type="email" name="email">
-       <label >Telefone</label>
-       <input class="form-control" type="number" name="telefone">
-       <input class="btn btn-primary mt-3" type="submit">
-   </form>
-   <a class="btn btn-warning mt-3"  href="consulta.php" role="button">Consultar</a>
-   </div>
-   
-    
+    <div class="container">
+        <h3>Painel do Sistema</h3>
+        <ul>
+            <li><a href="cadastrar.php">Cadastrar Aluno</a></li>
+        </ul>
+        <ul>
+            <li><a href="consulta.php">Consultar Aluno</a></li>
+        </ul>
+    </div>
 </body>
 </html>

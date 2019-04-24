@@ -18,7 +18,7 @@ $resultado = mysqli_query ($con, $sql);
 if ($sql)
 {
     echo "Dados gravados com sucesso";
-    ?> <a href="consulta.php"></a><button>Ok</button> <?php
+    ?> <a href="index.php"></a><button>Ok</button> <?php
 }
 else{
     echo "Erro ao gravar no banco!";
