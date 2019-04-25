@@ -45,7 +45,8 @@
                 <th>Nome</th>
                 <th>E-mail</th>
                 <th>Telefone</th>
-                
+                <td>Editar</td>
+                 <td>Excluir</td>
             </tr>
 
             <?php
@@ -55,9 +56,8 @@
                         echo "<td>".$row["nome"]."</td>";
                         echo "<td>".$row["email"]."</td>";
                         echo "<td>".$row["telefone"]."</td>";
+                        echo "<td>...</td>";                         echo "<td>X</td>"; 
                         echo "<tr>";
-                        
-    
                     } ?>
         </table>
         <?php 

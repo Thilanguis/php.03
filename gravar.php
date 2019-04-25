@@ -1,5 +1,5 @@
 <?php
-
+include_once 'head.php';
 include_once 'conexao.php';
 
 $nome = $_POST["nome"];
@@ -18,7 +18,7 @@ $resultado = mysqli_query ($con, $sql);
 if ($sql)
 {
     echo "Dados gravados com sucesso";
-    ?> <a href="index.php"></a><button>Ok</button> <?php
+    ?> <a href="index.php"><button class="btn">Ok</button></a> <?php
 }
 else{
     echo "Erro ao gravar no banco!";

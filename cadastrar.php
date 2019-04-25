@@ -18,7 +18,7 @@
        <input class="form-control" type="email" name="email">
        <label >Telefone</label>
        <input class="form-control" type="number" name="telefone">
-       <input class="btn btn-primary mt-3" type="submit">
+       <input class="btn btn-primary" style="margin-top: 10px;" type="submit">
    </form>
    </div>
    
