@@ -17,6 +17,7 @@
     <input type="text" name="nome" class="form-control">
     <div style="margin-top: 10px;">
     <input type="submit" value="Buscar" class="btn btn-primary">
+    <a href="index.php">Página inicial</a>
     </div>
     </div>
     </form>
@@ -45,8 +46,8 @@
                 <th>Nome</th>
                 <th>E-mail</th>
                 <th>Telefone</th>
-                <td>Editar</td>
-                 <td>Excluir</td>
+                <th>Editar</th>
+                <th>Excluir</th>
             </tr>
 
             <?php
@@ -56,10 +57,11 @@
                         echo "<td>".$row["nome"]."</td>";
                         echo "<td>".$row["email"]."</td>";
                         echo "<td>".$row["telefone"]."</td>";
-                        echo "<td>...</td>";                         echo "<td>X</td>"; 
+                        echo "<td><a href='form-editar.php?idContato=".$row["matricula"]."'><img class='editar' src='img/icons8-edit-48.png' alt='#'></a></td>";
+                        echo "<td><a href='#'><img class='excluir'  src='img/icons8-waste-48.png' alt=''></a></td>"; 
                         echo "<tr>";
                     } ?>
-        </table>
+        </table> 
         <?php 
         }
              else{
