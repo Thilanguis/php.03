@@ -14,7 +14,7 @@
     if(isset($_GET["idContato"]))
     {
     
-         include_once 'conexao.php';
+        include_once 'conexao.php';
        
        $sql = "select * from aluno where matricula=".$_GET["idContato"];
        
@@ -24,9 +24,10 @@
     
     ?>
    <div class="container" style="width: 500px;">
-   <form action="gravar.php" method="post">
+   <form action="atualizar.php" method="post">
       
       <h3>Cadastro de Alunos</h3>
+       <input class="form-control" type="hidden" name="idContato" value="<?php echo $row["matricula"]; ?>">
        <label >Nome</label>
        <input class="form-control" type="text" name="nome" value="<?php echo $row["nome"]; ?>">
        <label >E-Mail</label>
