@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Escola Santa Paciência</title>
-    
     <?php include_once 'head.php'; ?>
     
 </head>

@@ -58,7 +58,7 @@
                         echo "<td>".$row["email"]."</td>";
                         echo "<td>".$row["telefone"]."</td>";
                         echo "<td><a href='form-editar.php?idContato=".$row["matricula"]."'><img class='editar' src='img/icons8-edit-48.png' alt='#'></a></td>";
-                        echo "<td><a href='#'><img class='excluir'  src='img/icons8-waste-48.png' alt=''></a></td>"; 
+                        echo "<td><a href='#' onclick='excluir(".$row["matricula"].")'><img class=''  src='img/icons8-waste-48.png' alt=''></a></td>"; 
                         echo "<tr>";
                     } ?>
         </table> 
