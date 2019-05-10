@@ -1,4 +1,5 @@
 <?php 
+include_once 'head.php';
 
 include_once 'conexao.php';
 
@@ -13,13 +14,13 @@ $sql = "update aluno set nome='".$nome."', email='".$email."', telefone='".$tele
 if(mysqli_query($con,$sql))  
     {
         ?>
-        <div  class="alert alert-success" role="alert">
+        <div class="alert alert-success animated zoomIn container" role="alert" style="width: 300px; margin-top: 100px;">
             Contato atualizado com sucesso!
         </div>
     
     <div id="btnConfirmacao">
-        <a href="consulta.php"><button id="btnVoltar1" type="button" class="btn btn-warning">OK</button></a>
-    </div>
+            <a href="consulta.php"><button id="btnVoltar1" type="button" class="btn btn-warning animated zoomIn" style="margin-left:48%;">OK</button> </a>
+        </div>
     <?php
         
     }
